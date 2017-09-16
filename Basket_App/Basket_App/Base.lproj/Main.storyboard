@@ -139,6 +139,9 @@
                                         <state key="normal" title="Men">
                                             <color key="titleColor" red="0.95680111560000003" green="0.98622338350000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMen:" destination="8MD-9W-7Uv" eventType="touchUpInside" id="30w-gb-1x2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwr-G6-0Dn">
                                         <rect key="frame" x="0.0" y="72" width="343" height="52"/>
@@ -150,6 +153,9 @@
                                         <state key="normal" title="Female">
                                             <color key="titleColor" red="0.95680111560000003" green="0.98622338350000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomen:" destination="8MD-9W-7Uv" eventType="touchUpInside" id="DQb-u3-rWL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgU-US-SwP">
                                         <rect key="frame" x="0.0" y="144" width="343" height="52"/>
@@ -161,10 +167,13 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="0.95680111560000003" green="0.98622338350000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Co:" destination="8MD-9W-7Uv" eventType="touchUpInside" id="hso-aL-imT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoB-90-ORh">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoB-90-ORh">
                                 <rect key="frame" x="16" y="595" width="343" height="52"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30562279930000003" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -211,6 +220,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="PoB-90-ORh" id="WYs-VJ-exx"/>
                         <segue destination="hSH-Ss-DeT" kind="show" identifier="SkillVCSegue" id="EtV-aC-x5s"/>
                     </connections>
                 </viewController>
