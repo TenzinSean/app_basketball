@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="136.95652173913044"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC View Controller-->
         <scene sceneID="IWH-ZS-Rx0">
             <objects>
-                <viewController id="8MD-9W-7Uv" sceneMemberID="viewController">
+                <viewController id="8MD-9W-7Uv" customClass="LeagueVCViewController" customModule="Basket_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Rw-ji-UCt"/>
                         <viewControllerLayoutGuide type="bottom" id="t1E-4R-hew"/>
@@ -175,6 +175,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.95680111560000003" green="0.98622338350000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="8MD-9W-7Uv" eventType="touchUpInside" id="9HF-ez-1y9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfB-Lz-6fP">
                                 <rect key="frame" x="16" y="10" width="83" height="40"/>
@@ -207,16 +210,19 @@
                             <constraint firstItem="SfB-Lz-6fP" firstAttribute="top" secondItem="WF2-l8-3qd" secondAttribute="topMargin" constant="10" id="ze0-4f-KX4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="hSH-Ss-DeT" kind="show" identifier="SkillVCSegue" id="EtV-aC-x5s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cY0-4s-yua" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dlV-K4-eqC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="840.79999999999995" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="xuf-OG-NtM">
             <objects>
-                <viewController id="hSH-Ss-DeT" sceneMemberID="viewController">
+                <viewController id="hSH-Ss-DeT" customClass="SkillVC" customModule="Basket_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s6Z-MK-jIn"/>
                         <viewControllerLayoutGuide type="bottom" id="4EL-C9-7Tm"/>
